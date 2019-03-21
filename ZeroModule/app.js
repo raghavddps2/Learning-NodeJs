@@ -49,5 +49,5 @@ class NameGenerator{
 }
 //So, long in short, what we are basically doing is using the bind function to bind the this or the refernece we wanna have 
 // so in turn in this case, it will refer to the constructor and not the button.
-// const gen = new NameGenerator();
+const gen = new NameGenerator();
 

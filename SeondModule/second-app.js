@@ -43,7 +43,7 @@ console.log(firstPerson);
 //To avoid this we can use something like loadash.
 // Lodash is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.
 
-/*                  ----------------------------------Snippet 4-----------------------------------------                      */
+/*                  ----------------------------------Snippet 5-----------------------------------------                      */
 var myHobbies = firstPerson.hobbies;  //This is not a primitive value, that's a refernece agaiain, this is clear by the myHobbies variable.
 console.log(myHobbies);
 
@@ -52,7 +52,7 @@ firstPerson.hobbies.push('Freaking!');
 console.log(myHobbies);
 
 //We can do the actual value (primitive ) using the slice method available in arrays.
-
+/*                  ----------------------------------Snippet 6-----------------------------------------                      */
 var myHobbies2 = firstPerson.hobbies.slice(); //Pass no arguments, so entire array
 console.log(myHobbies2);
 

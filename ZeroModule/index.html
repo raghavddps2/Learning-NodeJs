@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <script type="text/javascript">
+      
+    var customer = {
+      name: 'Raghav Maheshwari',
+      speak: function(){
+        return 'My name is ' + this.name;
+      },
+      address: {
+        street: 'Gali no 7',
+        city: 'Muzzaffarnagar',
+        state: 'Uttar Pradesh'
+      }
+    }
+    
+    document.write(customer.speak()+"</br>");
+    document.write(`Customers name is ${customer.name} and customer lives at ${customer.address.street} </br>`);
+    document.write(`customers name is ${customer.name} </br>`);
+
+    customer.address.country = "United States Of America";
+    document.write(`customer lives in ${customer.address.country}`);
+  </script>
+</body>
+</html>

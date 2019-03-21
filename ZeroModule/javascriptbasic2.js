@@ -8,7 +8,7 @@ var myVariables = {
     },
 
     summaryAppointements: function(){
-        return(`${this.name} has ${this.appointements} appointments today`);
+        return(`${this.name} has ${this.appointements} appointments today`);  //So, we basically use this to access the values inside the function
     }
 }
 

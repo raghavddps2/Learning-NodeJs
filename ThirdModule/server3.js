@@ -2,7 +2,7 @@ const http = require('http');
 const routes = require('./routes'); //This is not local! So, complete one!
 //All code there is here in this routes constant
 
-const server = http.createServer(routes);
+const server = http.createServer(routes);  //We just add the routes.
 
 server.listen(3000);
 

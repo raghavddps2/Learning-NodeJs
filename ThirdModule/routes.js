@@ -60,3 +60,24 @@ const requestHandler = (req,res) =>{
 
 module.exports = requestHandler;
 //You can register anything there.
+
+//Sometimes there are many things that we wanna send.
+/*
+    module.exports = {
+        handler: requestHandler,
+        someText: 'some Hard coded Text'
+    }
+    //So. we can use it by routes.someText or routes.handler and son on...
+*/
+
+/*
+    module.exports.handler = requestHnadler;
+    module.exports.someText = 'some hard coded text'; 
+    //We can even send things like this.
+
+    //We can have a shortcut, where we can leave modules and then go on...
+    exports.handler = requestHandler;
+
+    These are the various ways in which we send various things we receive there.
+
+*/

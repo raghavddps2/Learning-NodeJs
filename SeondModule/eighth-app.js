@@ -35,4 +35,7 @@ console.log(arr2(1,2,3,4)); //This will output the array with these values.
 var arr2 = (...args) => {
     return args;
 }
-console.log(arr2(1,2,3,4,5)); //This will output tthe entire array, how many ever values we pass, because we have used the REST operator.
+console.log(arr2(1,2,3,4,5)); //This will output tthe entire array, how many ever values we pass, because we have used the REST operator. 
+
+//So, we basically had the rest and the spread operator.
+    //The spread operator, basically copies the array to a new array and the rest operator for putting all elements in the array.

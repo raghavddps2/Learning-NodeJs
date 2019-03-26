@@ -7,7 +7,7 @@ const requestHandler = (req,res) =>{
     if(url === '/'){
         
         res.write('<htmL>');
-            res.write('<head><title>Welcome to my page</title></head>');
+            res.write('<head><title>Welcome to my page Love</title></head>');
             res.write('<body>');
             res.write('<form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form>');
             res.write('</body>');
@@ -25,6 +25,7 @@ const requestHandler = (req,res) =>{
             const parsedBody = Buffer.concat(body).toString(); //Bufffer object is provided by nodeJs.
             console.log(parsedBody);
             const message = parsedBody.split('=')[1]; //This will give the acual message;
+            ///Consider you give 0 here, then such a logical error.
             fs.writeFileSync('message.txt',message,err=>{
                 res.statusCode = 302; //Redirection
                 res.setHeader('Location','/');  //Whole of this code only works, when the message is put into the file.

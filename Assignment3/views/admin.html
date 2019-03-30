@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin pannel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/main.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./users">Users</a></li>
+                <li><a href="./admin">Admin</a></li>
+        </ul>
+    </nav>
+
+    <form action="/admin" method="post">
+        <div>
+            <label name="label1">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="email" name="email" placeholder="johndoe@gmail.com">
+        </div>
+        <div>
+                <label name="label1">Password:</label>
+                <input type="password" name="email" placeholder="**************">
+        </div>
+        <br>
+        <button type="submit">Login Admin</button>
+    </form>
+</body>
+</html>

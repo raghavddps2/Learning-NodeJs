@@ -7,6 +7,7 @@ router.get('/admin',(req,res,next)=>{
 });
 
 router.post('/dash',(req,res,next)=>{
+    console.log(req.body);
     res.redirect('/'); 
 
 });
